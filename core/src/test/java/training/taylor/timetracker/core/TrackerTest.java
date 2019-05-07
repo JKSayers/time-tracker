@@ -27,9 +27,9 @@ public class TrackerTest {
     public void testAdd() {
         TimeEntry entry = new TimeEntry();
         entry.setDescription("Entry Test");
-        entry.setRate(-800.0f);
+        entry.setRate(80.0f);
         entry.setTime(1);
         tracker.add(entry);
-        assertTrue(tracker.size() == 999);
+        assertTrue(tracker.size() < 0);
     }
 }
